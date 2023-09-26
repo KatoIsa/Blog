@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background-image: url('../assets/Cat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #333;
+}
+
+/* Customize the scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #457767;
+    border-radius: 6px;
+}
+
+/* Customize the scrollbar track (non-draggable part) */
+::-webkit-scrollbar-track {
+    background-color: #0000007a;
+    border-radius: 6px;
+}
+
+body::before{
+    content: '';
+    top: 0px;
+    background-color: #20202080;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header{
+    text-align: cent;
+    background: #1d1d1d;
+    color: #fff;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 1px solid #3b3b3b;
+}
+.hero{
+    margin-top: -10px;
+    z-index: -1;
+    position: relative;
+    color: #7a7979;
+    background-color: #1d1d1dbb;
+    height: 80px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px); 
+}
+.hero h2{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+/* Main content container for dark theme */
+main {
+    position: relative;
+    z-index: 100;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 30px!important;
+    }
+    main {
+    max-width: 80%!important;
+}
+}
+
+/* Section styling for dark theme */
+section {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px); 
+    background-color: #171822a2;
+    padding: 20px;
+    border-radius: 8px;
+}
+section img{
+    width: 700px;
+}
+@media (max-width:836px) {
+    section img{
+        width: 600px;
+    }
+}
+@media (max-width:714px) {
+    section img{
+        width: 500px;
+    }
+}
+
+@media (max-width:620px) {
+    section img{
+        width: 300px;
+    }
+}
+@media (max-width:474px) {
+    section img{
+        width: 200px;
+    }
+}
+section p{
+    text-align: left;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Heading styling for dark theme */
+h1, h2, h3 {
+    color: #fff;
+}
+
+/* Link styling for dark theme */
+a {
+    color: #22c96e;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1d5a85;
+}
+
+footer{
+    text-align: center;
+}
