@@ -94,14 +94,14 @@ body, h1, h2, h3, p {
 }
 
 
-/* @keyframes bounce {
+@keyframes bounce {
     0% {
         transform: translateY(0);
     }
     100% {
         transform: translateY(-10px);
     }
-} */
+}
 
 /* Header styling for dark theme */
 /* Header styling with transparent background */
