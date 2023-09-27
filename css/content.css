@@ -11,6 +11,11 @@ body {
     color: #fff;
 }
 
+.scrollHelper{
+    height: 100vh;
+    overflow: auto;
+}
+
 /* Customize the scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
