@@ -1,7 +1,7 @@
 /* Reset some default styles and apply a modern font */
 /* Apply a dark background to the body */
 body {
-    background-image: url('../assets/Cat.png');
+    background-image: url('../assets/Cat.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #1e1e1e;
@@ -15,7 +15,7 @@ body {
 }
 
 body::before{
-    /* z-index: -1; */
+    z-index: -1;
     content: '';
     top: 0px;
     background-color: #20202080;
@@ -151,7 +151,7 @@ main {
     position: relative;
     z-index: 100;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 20px;
     border-radius: 8px;
     display: flex;

@@ -2,9 +2,9 @@ const App = {
     RandomImageGenrator: () =>{
         document.addEventListener("DOMContentLoaded", function() {
             const randomImages = [
-                "./assets/Random-1.png",
-                "./assets/Random-3.png",
-                "./assets/Random-4.png",
+                "./assets/Random-1.jpg",
+                "./assets/Random-3.jpg",
+                "./assets/Random-4.jpg",
             ];
 
             const randomImageElements = document.querySelectorAll(".card");
