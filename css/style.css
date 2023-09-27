@@ -14,24 +14,6 @@ body {
     height: 100vh;
     overflow: auto;
 }
-/* Customize the scrollbar */
-::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-    border: 1px solid #333;
-}
-
-/* Customize the scrollbar thumb (draggable part) */
-::-webkit-scrollbar-thumb {
-    background-color: #457767;
-    border-radius: 6px;
-}
-
-/* Customize the scrollbar track (non-draggable part) */
-::-webkit-scrollbar-track {
-    background-color: #0000007a;
-    border-radius: 6px;
-}
 
 body::before{
     z-index: -1;
@@ -67,8 +49,9 @@ body, h1, h2, h3, p {
     color: #fd5252;
     font-size: 20px;
     font-weight: bolder;
-    top: 10px;
-    left: 160px;
+    margin-top: -40px;
+    margin-left: 141px;
+    /* left: 160px; */
 }
 .card{
     position: relative;
@@ -109,11 +92,9 @@ body, h1, h2, h3, p {
     width: 200px;
     height: 50px;
     bottom: 0px;
-    background: #5757577e;
+    background: #202020e3;
     transition: 0.2s;
-    box-shadow: 3px 0px 6px 0px #333;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px); 
+    box-shadow: 3px 0px 6px 0px #1a1a1a;
     
 }
 .card p{
