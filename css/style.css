@@ -6,7 +6,6 @@ body {
     background-size: cover;
     background-color: #1e1e1e;
     display: flex; /* Use flexbox for row alignment */
-    flex-direction: row; /* Display header and content in a row */
     align-items: center; /* Vertically center content */
 }
 .scrollHelper{
@@ -16,7 +15,7 @@ body {
 }
 
 body::before{
-    z-index: -1;
+    /* z-index: -1; */
     content: '';
     top: 0px;
     background-color: #20202080;
