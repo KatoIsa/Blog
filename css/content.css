@@ -145,9 +145,17 @@ section img {
     width: 200px;
   }
 } */
+section img{
+    margin-bottom: 20px;
+}
+section h3{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 section p {
   text-align: left;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   font-size: 17px;
   font-weight: 300;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
