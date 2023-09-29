@@ -152,6 +152,9 @@ section h3{
     text-align: left;
     margin-top: 30px;
 }
+section h2, h3{
+  margin-bottom: 20px;
+}
 section p {
   text-align: left;
   /* margin-top: 30px; */
@@ -165,7 +168,6 @@ h1,
 h2,
 h3 {
   color: #fff;
-  margin-bottom: 20px;
 }
 
 /* Link styling for dark theme */
