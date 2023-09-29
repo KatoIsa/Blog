@@ -151,7 +151,6 @@ section img{
 section h3{
     text-align: left;
     margin-top: 30px;
-    margin-bottom: 20px;
 }
 section p {
   text-align: left;
@@ -166,6 +165,7 @@ h1,
 h2,
 h3 {
   color: #fff;
+  margin-bottom: 20px;
 }
 
 /* Link styling for dark theme */
@@ -180,6 +180,43 @@ a:hover {
   color: #1d5a85;
 }
 
-footer {
-  text-align: center;
+footer{
+    text-align: center;
+    /* margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px; */
+    margin: 20px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: #171822a2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contacts{
+    width: fit-content;
+    margin-top: 5px!important;
+    margin: 0px auto;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+.contacts a{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.contacts a:nth-child(1){
+    background-image: url('../icons/github.png');
+    background-size: cover;
+}
+.contacts a:nth-child(2){
+    background-image: url('../icons/whatsapp.png');
+    background-size: cover;
+}
+.contacts a:nth-child(3){
+    background-image: url('../icons/linkedin.png');
+    background-size: cover;
 }
