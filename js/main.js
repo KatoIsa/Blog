@@ -1,4 +1,34 @@
 const App = {
+    cards: () => {
+        const cardParent = _.Select('.cardsSection'); // get cards parent element ...
+        const cardData = [
+            'Understanding Photoshop',
+            'Getting Adobe Photoshop',
+            'Installing Photoshop',
+            'Navigating the Interface',
+            'Basic Tools and Techniques',
+            'Learning Resources',
+            'Practice Makes Perfect',
+            'Stay Updated',
+            'Explore Advanced Topics'
+        ]
+        
+        // render cards onto the html page
+        for (i = 0; i <= cardData.length; i++) {
+            if (!cardData[i]) return
+            const card = _.HTMLcreate('div');
+            _.addClass(card, 'card');
+            card.innerHTML = `
+                <div class="Title">
+                    <p>
+                        ${cardData[i]}
+                    </p>
+                </div>
+            `
+            cardParent.appendChild(card);
+        }
+
+    },
     RandomImageGenrator: () => {
         const randomImages = [
             "./assets/Random-3.jpg",
@@ -78,17 +108,18 @@ const App = {
                 button.innerHTML = `<a href=${link}><span></span></a>`;
 
                 cards[i].appendChild(button);
-                _.Event(cards[i], 'mouseover', ()=>{
+                _.Event(cards[i], 'mouseover', () => {
                     _.addClass(button, 'showButton');
                 }, true);
-                _.Event(cards[i], 'mouseout', ()=>{
+                _.Event(cards[i], 'mouseout', () => {
                     _.removeClass(button, 'showButton');
                 }, true);
             }
         }
-    }
+    },
+    run: () =>{App.cards();App.Topicnumber();App.ViewType();App.ContentPageRedirect();}
 }
 
-App.Topicnumber();
-App.ViewType();
-App.ContentPageRedirect();
+App.run();
+
+

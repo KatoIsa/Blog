@@ -159,6 +159,31 @@ Type ...
         width: 200px;
     }
 }
+@media (max-width: 266px){
+    .ListLayout .card{
+        width: 200px;
+        margin-left: -10px!important;
+    }
+}
+@media (max-width: 255px){
+    .ListLayout .card{
+        width: 160px;
+        height: 50px;
+    }
+    .ListLayout .card p{
+        width: 100px;
+    }
+    .ListLayout .card .numberingDiv{
+        height: 50px;
+    }
+    #hot-topics h2{
+        font-size: 20px!important;
+        width: 120px;
+    }
+    #hot-topics .topicNumber{
+        margin-left: 110px!important;
+    }
+}
 .ListLayout .card .Title{
     margin-top: 3px;
     margin-left: 40px;
@@ -325,6 +350,12 @@ header h1 {
     color: #fff;
     margin-bottom: 10px;
     animation: titleFadeIn 1s ease-in-out forwards;
+}
+
+@media (max-width:259px){
+    header h1{
+        font-size: 20px!important;
+    }
 }
 
 /* Keyframe animation for title */
