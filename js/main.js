@@ -14,8 +14,8 @@ const App = {
         ]
         
         // render cards onto the html page
-        for (i = 0; i <= cardData.length; i++) {
-            if (!cardData[i]) return
+        for (i = 0; i < cardData.length; i++) {
+            // if (!cardData[i]) return
             const card = _.HTMLcreate('div');
             _.addClass(card, 'card');
             card.innerHTML = `
@@ -58,17 +58,15 @@ const App = {
         const topicNumber = document.querySelector('.topicNumber');
         topicNumber.innerText = cardNumber;
 
-        for (i = 0; i <= cards.length; i++) {
+        for (i = 0; i < cards.length; i++) {
             // add numbering to the topics ....
 
-            if (cards[i]) {
                 const numberingDiv = document.createElement('div');
                 numberingDiv.classList.add('numberingDiv');
 
                 numberingDiv.innerHTML = i + 1;
                 // cards[i].append(numberingDiv);
                 cards[i].appendChild(numberingDiv)
-            }
         }
 
     },
