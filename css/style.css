@@ -341,6 +341,11 @@ header {
     text-align: center;
     padding: 20px;
 }
+header img {
+    max-width: 50%;
+    border: 2px solid #a9a9af;
+    border-radius: 100%;
+}
 /* Modern title styling */
 header h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
