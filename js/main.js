@@ -3,14 +3,7 @@ const App = {
         const cardParent = _.Select('.cardsSection'); // get cards parent element ...
         const cardData = [
             'Understanding Photoshop',
-            'Getting Adobe Photoshop',
-            'Installing Photoshop',
-            'Navigating the Interface',
-            'Basic Tools and Techniques',
-            'Learning Resources',
-            'Practice Makes Perfect',
-            'Stay Updated',
-            'Explore Advanced Topics'
+            'Mastering Photoshop Basics',
         ]
         
         // render cards onto the html page
@@ -96,14 +89,13 @@ const App = {
     ContentPageRedirect: () => {
         // get all card elements.
         const cards = document.querySelectorAll('.card');
-        const link = './Content.html';
+        const link = ['./Content.html','./Content2.html'];
 
         // lets add a redirect button to each element
-        for (i = 0; i <= cards.length; i++) {
-            if (cards[i]) {
+        for (i = 0; i < cards.length; i++) {
                 const button = _.HTMLcreate('div');
                 _.addClass(button, 'redirectButton')
-                button.innerHTML = `<a href=${link}><span></span></a>`;
+                button.innerHTML = `<a href=${link[i]}><span></span></a>`;
 
                 cards[i].appendChild(button);
                 _.Event(cards[i], 'mouseover', () => {
@@ -112,7 +104,6 @@ const App = {
                 _.Event(cards[i], 'mouseout', () => {
                     _.removeClass(button, 'showButton');
                 }, true);
-            }
         }
     },
     run: () =>{App.cards();App.Topicnumber();App.ViewType();App.ContentPageRedirect();}
