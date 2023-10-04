@@ -89,7 +89,7 @@ const App = {
     ContentPageRedirect: () => {
         // get all card elements.
         const cards = document.querySelectorAll('.card');
-        const link = ['./Content.html','./Content2.html'];
+        const link = ['./content.html','./content2.html'];
 
         // lets add a redirect button to each element
         for (i = 0; i < cards.length; i++) {
