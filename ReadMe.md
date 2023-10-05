@@ -1,4 +1,13 @@
-## Under development
-# THE LAD-BLOGGER (my personal blog)
-### this is a way I say bye bye to html and css plus js coz amma shift to React and node js ....
+<center>
+
+![lad-blogger-logo](./icons/Icon@0.5x.png)
+# LAD-BLOGGER 
+
+# (PHOTOSHOP BLOG)
+
+### this blog website is a child of the main lad-blogger website.
+
+</center>
+
+
 
