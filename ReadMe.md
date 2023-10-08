@@ -1,14 +1,11 @@
 
-<div style="text-align: center;">
+<div align='center'>
 
-![lad-blogger-logo](./icons/Icon@0.5x.png)
+![logoImage](./icons/Icon@0.5x.png)
 
-# LAD-BLOGGER 
-
-# (PHOTOSHOP BLOG)
-
-### This blog website is a child of the main lad-blogger website.
-
+<h2>PHOTOSHOP LAD-BLOGGER</h2>
+<p>(PHOTOSHOP BLOG)</p>
+<P>This blog website is a child of the main lad-blogger website.</P>
 </div>
 
 
